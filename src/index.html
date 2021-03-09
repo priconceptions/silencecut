@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Silence Cut</title>
+      <link href="tailwind.css" rel="stylesheet">
+      <script src="https://unpkg.com/wavesurfer.js"></script>
+      <script src="render.js" defer></script>
+  </head>
+  <body class="bg-coolGray-50 p-10">
+    <div id="importScreen" class="p-10 h-screen">
+      <h1 id="callToActionTitle" class="text-4xl font-black flex justify-center py-6">Drag and drop an audio or video file</h1>
+      <div id="dragSpace" class="p-8 rounded-xl bg-blue-200 text-center flex flex-col justify-center h-5/6">
+        <div class="flex justify-center p-10 m-auto max-w-xl max-w-lg rounded-2xl border-4 border-blue-800 border-opacity-100 bg-blue-800 pointer-events-none">
+          <img src="assets/icons/dragIcon.svg" alt="Drag Icon" class="w-32 h-32 stroke-current text-purple-600" />
+        </div>
+        <div class="flex justify-center p-2">
+          <button class="transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110 font-bold text-blue-600">Or click here to browse your file system</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
